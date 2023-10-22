@@ -11,7 +11,7 @@ import (
 func countByte(arr []byte, bitty byte) int {
 	var count int = 0
 	for _, elem := range arr {
-		if elem == 10 {
+		if elem == bitty {
 			count++
 		}
 	}
@@ -121,6 +121,6 @@ func main() {
 		lineCount := countByte(text, 10)
 		wordCount := countWord(text)
 		charCount := countChar(text)
-		fmt.Println(lineCount, wordCount, charCount)
+		fmt.Println(lineCount, wordCount, charCount, "no file name here tho hahaa")
 	}
 }
